@@ -1,0 +1,66 @@
+.grid {
+  padding: 120px 0;
+}
+.grid__title {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.grid__descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.grid__title,
+.grid__descr {
+  max-width: 513px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+.grid__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 28px;
+    margin-bottom: 30px;
+}
+.grid__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid #176bae;
+  border-radius: 16px;
+  padding: 28px;
+  max-width: 204px;
+  box-shadow: 4px 4px 13px 0 rgba(5, 13, 41, 0.76);
+  background: #197cb8;
+}
+.grid__item-title {
+  font-weight: 600;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.grid__item-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+}
+.grid__btn {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 100px;
+  padding: 18px 30px;
+  max-width: 436px;
+  background: linear-gradient(180deg, #00a4cc 0%, #2766ae 100%);
+  margin: 0 auto;
+  transition: all var(--transition);
+}
+.grid__btn:hover {
+  box-shadow: 0px 0px 10px 30px rgba(11, 88, 15, 0.8) inset;
+}
+.grid .container {
+  max-width: 900px;
+}

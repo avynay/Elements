@@ -1,0 +1,128 @@
+.header__burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.header__burger-line {
+  width: 30px;
+  height: 3px;
+  background-color: #000; /* Цвет линий бургер-меню */
+  margin: 3px 0;
+}
+.header__nav {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 150%;
+}
+.header__menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 58px;
+}
+
+.header__menu-item:hover .header__menu-link {
+  color: orange;
+}
+
+.header__menu-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 171%;
+  transition: all var(--transition);
+}
+.header__menu-link--btn {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  padding: 9px 24px;
+  background: linear-gradient(180deg, #00a4cc 0%, #2766ae 100%);
+  border-radius: 29px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 150%;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  transition: all var(--transition);
+}
+.header__menu-link--btn:hover {
+  box-shadow: 0px 0px 3px 3px rgb(255, 170, 0) , 0px 0px 10px 30px rgb(0, 0, 0) inset;
+}
+.header__hero {
+  background: linear-gradient(#181e34cc, #181E34cc), url(../img/decor/hero-bg.jpg);
+  background-position: top;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+}
+.header__hero-title {
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.header__hero-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__hero-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+.header__hero-descr {
+  max-width: 436px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+
+  span {
+    font-weight: 700;
+font-size: 16px;
+text-transform: uppercase;
+color: #01a2cb;
+  }
+}
+.header__hero-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.header__hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 100px;
+  padding: 18px;
+  background: linear-gradient(129deg, #00a4cc 0%, #2766ae 100%);
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  width: 320px;
+  transition: all var(--transition);
+}
+.header__hero-btn:hover {
+  opacity: 0.7;
+}
+
+.header__hero-btn > svg > g:nth-child(1) > path:nth-child(2) {
+  animation: click 1.5s infinite;
+  }
+
+@keyframes click {
+  0% {
+    transform: translateY(16px);
+  }
+  100% {
+    transform: translateY(2px);
+  }
+}

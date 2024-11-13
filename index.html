@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elements</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="body">
+    <div class="wrapper">
+      <!-- HEADER START -->
+      <header class="header">
+        <div class="container">
+          <!-- MENU -->
+          <nav class="header__nav">
+            <a href="/" class="header__logo">HOME</a>
+            <button class="header__burger" aria-label="Toggle menu">
+              <span class="header__burger-line"></span>
+              <span class="header__burger-line"></span>
+              <span class="header__burger-line"></span>
+            </button>
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="#details" class="header__menu-link">Accordion & Lightbox</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#tab-1" class="header__menu-link">Tabs & Popup</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#slider-1" class="header__menu-link">Slider & Grid</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#footer" class="header__menu-link">Contacts</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link header__menu-link--btn">
+                  <img src="./img/icons/kwork.png" loading="lazy" width="21" height="21" alt="KWORK" />
+                  WORK
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- описание -->
+        <div class="header__hero">
+          <div class="header__hero-container">
+            <h2 class="header__hero-title">
+              Демонстрационный сайт
+            </h2>
+            <div class="header__hero-bottom">
+              <p class="header__hero-descr">
+                Этот сайт создан для демонстрации различных элементов которые я
+                могу сделать, стилизация сделана быстро и без дизайнера, не
+                обращайте внимания на это. <br />
+                Любые элементы могут быть "натянуты" на wordpress чтобы вы могли
+                редактировать их содержимое, в т.ч можно сделать чтобы вы могли
+                менять <span>их цвета</span> , рАзМеРы и тд ^^ <br />
+                Кстати первые элементы справа → → → <br>
+                А если ты с мобилки то снизу
+              </p>
+              <div class="header__hero-btns">
+                <a
+                  href="#details"
+                  class="header__hero-btn"
+                >
+                  Кнопка
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_6_128)">
+                      <path
+                        d="M4.76665 6.9C3.91796 6.9 3.10403 6.56286 2.50391 5.96274C1.90379 5.36263 1.56665 4.54869 1.56665 3.7C1.56665 2.85131 1.90379 2.03737 2.50391 1.43726C3.10403 0.837142 3.91796 0.5 4.76665 0.5L12.2333 0.5C13.082 0.5 13.8959 0.837142 14.4961 1.43726C15.0962 2.03737 15.4333 2.85131 15.4333 3.7C15.4333 4.54869 15.0962 5.36263 14.4961 5.96274C13.8959 6.56286 13.082 6.9 12.2333 6.9H10.1V4.23333C10.1 3.52609 9.81903 2.84781 9.31894 2.34772C8.81884 1.84762 8.14056 1.56667 7.43332 1.56667C6.72607 1.56667 6.0478 1.84762 5.5477 2.34772C5.0476 2.84781 4.76665 3.52609 4.76665 4.23333V6.9Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M7.43328 2.63333C7.00894 2.63333 6.60197 2.8019 6.30191 3.10196C6.00186 3.40202 5.83328 3.80899 5.83328 4.23333V9.08667C5.23096 9.20962 4.68961 9.5369 4.30085 10.0131C3.9121 10.4893 3.69983 11.0853 3.69995 11.7C3.69995 12.973 4.20566 14.1939 5.10584 15.0941C6.00601 15.9943 7.22691 16.5 8.49995 16.5H9.03328C10.4478 16.5 11.8043 15.9381 12.8045 14.9379C13.8047 13.9377 14.3666 12.5812 14.3666 11.1667V10.2568C14.3666 9.64942 14.1253 9.06692 13.6959 8.63743C13.2664 8.20795 12.6839 7.96667 12.0765 7.96667H9.03328V4.23333C9.03328 3.80899 8.86471 3.40202 8.56466 3.10196C8.2646 2.8019 7.85763 2.63333 7.43328 2.63333Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_6_128">
+                        <rect
+                          width="16"
+                          height="16"
+                          fill="white"
+                          transform="translate(0.5 0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a
+                  href="#details"
+                  class="header__hero-btn"
+                >
+                  Кнопка
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_6_128)">
+                      <path
+                        d="M4.76665 6.9C3.91796 6.9 3.10403 6.56286 2.50391 5.96274C1.90379 5.36263 1.56665 4.54869 1.56665 3.7C1.56665 2.85131 1.90379 2.03737 2.50391 1.43726C3.10403 0.837142 3.91796 0.5 4.76665 0.5L12.2333 0.5C13.082 0.5 13.8959 0.837142 14.4961 1.43726C15.0962 2.03737 15.4333 2.85131 15.4333 3.7C15.4333 4.54869 15.0962 5.36263 14.4961 5.96274C13.8959 6.56286 13.082 6.9 12.2333 6.9H10.1V4.23333C10.1 3.52609 9.81903 2.84781 9.31894 2.34772C8.81884 1.84762 8.14056 1.56667 7.43332 1.56667C6.72607 1.56667 6.0478 1.84762 5.5477 2.34772C5.0476 2.84781 4.76665 3.52609 4.76665 4.23333V6.9Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M7.43328 2.63333C7.00894 2.63333 6.60197 2.8019 6.30191 3.10196C6.00186 3.40202 5.83328 3.80899 5.83328 4.23333V9.08667C5.23096 9.20962 4.68961 9.5369 4.30085 10.0131C3.9121 10.4893 3.69983 11.0853 3.69995 11.7C3.69995 12.973 4.20566 14.1939 5.10584 15.0941C6.00601 15.9943 7.22691 16.5 8.49995 16.5H9.03328C10.4478 16.5 11.8043 15.9381 12.8045 14.9379C13.8047 13.9377 14.3666 12.5812 14.3666 11.1667V10.2568C14.3666 9.64942 14.1253 9.06692 13.6959 8.63743C13.2664 8.20795 12.6839 7.96667 12.0765 7.96667H9.03328V4.23333C9.03328 3.80899 8.86471 3.40202 8.56466 3.10196C8.2646 2.8019 7.85763 2.63333 7.43328 2.63333Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_6_128">
+                        <rect
+                          width="16"
+                          height="16"
+                          fill="white"
+                          transform="translate(0.5 0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- HEADER END -->
+      <main class="main">
+        <!-- accordion start -->
+        <section class="details" id="details">
+          <div class="container">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="details__title"
+            >
+              Ниже аккордеон
+            </div>
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              class="accordion"
+            >
+              <div class="accordion__intro">
+                <h4>НАЖМИ МЕНЯ</h4>
+              </div>
+              <div class="accordion__content">
+                <p>
+                  при нажатии на элемент раскрывается его содержимое, можно
+                  сделать один или несколько элементов изначально
+                  раскрытыми,ТЫКНИ НА ВТОРОЙ ЭЛЕМЕНТ
+                </p>
+              </div>
+            </div>
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              class="accordion"
+            >
+              <div class="accordion__intro">
+                <h4>НАЖМИ МЕНЯ</h4>
+              </div>
+              <div class="accordion__content">
+                <p>
+                  Внутри аккордеона можно разместить почти что угодно, в т.ч
+                  картинки, видео, кнопки или слайдер, так же частенько
+                  аккордеон сочетается с табами,
+                  <a href="#light-1">они ниже ↓</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- fslightbox section -->
+        <section class="lightbox" id="light-1">
+          <div class="container">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="lightbox__title"
+            >
+              Нажми на кнопки ниже
+            </div>
+            <div class="lightbox__list">
+              <span
+                data-aos="fade-right"
+                data-aos-duration="1100"
+                class="lightbox-arrows"
+                >></span
+              >
+              <a
+                data-aos="fade-right"
+                data-aos-duration="1500"
+                href="/img/content/fruit.jpg"
+                data-fslightbox="first-lightbox"
+                class="lightbox__item"
+              >
+                Image Lightbox
+              </a>
+              <a
+                data-aos="fade-left"
+                data-aos-duration="1500"
+                href="/img/content/video.mov"
+                data-fslightbox="first-lightbox"
+                class="lightbox__item"
+              >
+                Video Lightbox
+              </a>
+              <span
+                data-aos="fade-left"
+                data-aos-duration="1100"
+                class="lightbox-arrows"
+                ><</span
+              >
+            </div>
+          </div>
+        </section>
+        <!-- tab section -->
+        <section class="tabs" id="tab-1">
+          <div class="container">
+            <h3 data-aos="fade-up" data-aos-duration="1000" class="tabs__title">
+              Табы и модальное окно
+            </h3>
+            <div data-aos="fade-zoom-in" data-aos-duration="1000" class="tabs__list">
+              <div class="tab-header">
+                <button
+                  data-aos="fade-right"
+                  data-aos-duration="1500"
+                  class="tablinks active"
+                  onclick="openTab(event, 'tab1')"
+                >
+                  Таб 1
+                </button>
+                <button
+                  data-aos="fade-right"
+                  data-aos-duration="1250"
+                  class="tablinks"
+                  onclick="openTab(event, 'tab2')"
+                >
+                  Таб 2
+                </button>
+                <button
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  class="tablinks"
+                  onclick="openTab(event, 'tab3')"
+                >
+                  Таб 3
+                </button>
+              </div>
+
+              <div id="tab1" class="tabcontent active">
+                <h3 data-aos="fade-up" data-aos-duration="1000">Это заголовок</h3>
+                <p data-aos="fade-up" data-aos-duration="1300">
+                  В табах помимо текста могут быть картинки, кнопки, видео,
+                  слайдеры и так далее,нажми на ТАБ 2
+                </p>
+              </div>
+
+              <div id="tab2" class="tabcontent">
+                <h3>Еще кое-что</h3>
+                <p>
+                  Кнопки табов(которые переключают их) можно так же сделать
+                  сбоку, так же имеется возможность сделать "отдельную кнопку"
+                  чтобы при нажатии на нее отображалось содержимое ВСЕХ табов,
+                  жми на ТАБ 3
+                </p>
+              </div>
+
+              <div id="tab3" class="tabcontent">
+                <h3>Напоследок</h3>
+                <p>
+                  Если что то не понятно
+                  <a href="#">обсуди это со мной(кликабельно)</a>, + контакты
+                  есть внизу страницы, следующий элемент(кнопка открыть окно) -
+                  модальное окно (или попап), а после него
+                  <a href="#slider-1">СЛАЙДЕР</a>
+                </p>
+              </div>
+            </div>
+            <a data-aos="fade-zoom-in" data-aos-duration="1000" href="#" class="open-popup" id="popupchik">Открыть окно</a>
+          </div>
+        </section>
+        <!-- slider -->
+        <section class="slider" id="slider-1">
+          <div class="swiper-container">
+            <div data-aos="fade-right" data-aos-duration="1500" class="swiper-wrapper">
+              <div class="swiper-slide">
+                <h5 class="slider-title">Слайдер</h5>
+                <p class="slider-descr">
+                  Это элемент которые позволяет сделать несколько слайдов(в
+                  данном случае они выглядят как карточки,можно сделать
+                  по-другому) которые периодически сменяют друг друга( или как в
+                  данном случае только при свайпе в сторону) читай следующий
+                  слайд
+                </p>
+                <img
+                  src="./img/content/s-1.jpg"
+                  alt=""
+                  width="400px"
+                  class="slider-img"
+                />
+              </div>
+              <div class="swiper-slide">
+                <h5 class="slider-title">Стилизация</h5>
+                <p class="slider-descr">
+                  Слайдер может быть стилизован почти как угодно, внутри слайдов
+                  можно разместить разное содержимое, как правило используется
+                  для демонстации чего либо например определенных товаров или
+                  услуг / отзывов клиентов о вашем продукте или услуге, свайпай
+                  вправо
+                </p>
+                <img
+                  src="./img/content/s-2.jpg"
+                  alt=""
+                  width="400px"
+                  class="slider-img"
+                />
+              </div>
+              <div class="swiper-slide">
+                <h5 class="slider-title">Элементы слайдера</h5>
+                <p class="slider-descr">
+                  В этом слайдере есть "буллеты" - это кружочки ниже слайдов,
+                  они отображают на каком из слайдов ты сейчас, так же можно
+                  добавить кнопки переключения слайдов, например справа и слева,
+                  можно сделать чтобы слайды сменяли друг-друга
+                  автоматически,смотри следующий слайд
+                </p>
+                <img
+                  src="./img/content/s-3.jpg"
+                  alt=""
+                  width="400px"
+                  class="slider-img"
+                />
+              </div>
+              <div class="swiper-slide">
+                <h5 class="slider-title">Элементы слайдера №2</h5>
+                <p class="slider-descr">
+                  Так же можно сделать бегущую строку, "прогресс бар" ( почти
+                  как то что снизу, только в виде линии, так же будет
+                  показываться на каком слайде ты сейчас), можно так же добавить
+                  различные анимации переключения слайдов, напишу про это на
+                  следующем слайде
+                </p>
+                <img
+                  src="./img/content/s-4.jpg"
+                  alt=""
+                  width="400px"
+                  class="slider-img"
+                />
+              </div>
+              <div class="swiper-slide">
+                <h5 class="slider-title">Некоторые особенности</h5>
+                <p class="slider-descr">
+                  Анимация, в этом слайдере ее нету, но ее можно сделать ,
+                  например чтобы слайды плавно затемнялись, или происходил
+                  эффект перелистывания страницы как в книге, + можно сделать
+                  чтобы за один свайп перелистывался не 1, а несколько слайдов
+                  одновременно, читай следудующий слайд
+                </p>
+                <img
+                  src="./img/content/s-1.jpg"
+                  alt=""
+                  width="400px"
+                  class="slider-img"
+                />
+              </div>
+              <div class="swiper-slide">
+                <h5 class="slider-title">Адаптация</h5>
+                <p class="slider-descr">
+                  Слайдеры могу выглядеть по-разному на разных устройствах,
+                  можно менять количество слайдов которые видно, удалять или
+                  добавлять элементы управления и так далее, естественно так-же
+                  можно поменять и содержимое внутри, смотри следующий слайд
+                </p>
+                <img
+                  src="./img/content/s-2.jpg"
+                  alt=""
+                  width="400px"
+                  class="slider-img"
+                />
+              </div>
+              <div class="swiper-slide">
+                <h5 class="slider-title">Еще кое-что</h5>
+                <p class="slider-descr">
+                  Если не понял про адаптацию просто уменьши окно браузера( в
+                  первую очередь его ширину) и все увидишь, но пойдем дальше,
+                  как ты можешь видеть по этому слайду, есть возможность делать
+                  разные размеры слайда, но если захочешь я сделаю чтобы все
+                  слайды были одинаковой высоты,смотри последний слайд ->
+                </p>
+                <img
+                  src="./img/content/s-3.jpg"
+                  alt=""
+                  width="400px"
+                  class="slider-img"
+                />
+              </div>
+              <div class="swiper-slide">
+                <h5 class="slider-title">Зачем?</h5>
+                <p class="slider-descr">
+                  Все просто: современные пользователи привыкли воспринимать
+                  информацию визуально, поэтому огромные блоки с информацией
+                  воспринимаются "не очень", для таких случаев и нужен слайдер,
+                  как правило в него помещают отзывы о ваших продуктах,сами
+                  продукты или просто важную инфу которой много, ну и согласись,
+                  слайдер - это красиво,можешь листать страницу ниже :)
+                </p>
+                <img
+                  src="./img/content/s-4.jpg"
+                  alt=""
+                  width="400px"
+                  class="slider-img"
+                />
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div data-aos="fade-up" data-aos-duration="1500" class="swiper-pagination"></div>
+          </div>
+        </section>
+        <!-- grid section -->
+        <section class="grid">
+          <div class="container">
+            <h2 data-aos="fade-up" data-aos-duration="1300"  class="grid__title">Простая сетка</h2>
+            <p data-aos="fade-up" data-aos-duration="1500" class="grid__descr">
+              Можно настроить разное количество колонок и рядов, их количество
+              как правило меняется на экранах меньшего размера, +- все
+              настраивается индивидуально. <br />
+              В целом на этом все, ниже ты увидишь меню навигации по странице, а
+              так-же ссылки на мои соцсети и на мой акк на кворке, надеюсь все
+              это было тебе полезно,удачи :)
+            </p>
+            <ul class="grid__list">
+              <li data-aos="fade-right" data-aos-duration="1000" class="grid__item">
+                <h5 data-aos="fade-right" data-aos-duration="1200" class="grid__item-title">Заголовок</h5>
+                <p data-aos="fade-right" data-aos-duration="1400" class="grid__item-descr">
+                  Хз что тут писать, напишу рецепт голубцов
+                </p>
+              </li>
+              <li data-aos="fade-right" data-aos-duration="900" class="grid__item">
+                <h5 data-aos="fade-right" data-aos-duration="1100" class="grid__item-title">Заголовок</h5>
+                <p data-aos="fade-right" data-aos-duration="1300" class="grid__item-descr">
+                  капуста - один качан, не слишком твердый
+                </p>
+              </li>
+              <li data-aos="fade-left" data-aos-duration="900" class="grid__item">
+                <h5 data-aos="fade-left" data-aos-duration="1100" class="grid__item-title">Заголовок</h5>
+                <p data-aos="fade-left" data-aos-duration="1300" class="grid__item-descr">
+                  200 грамм мясного фарша, соль по вкусу, но я предпочитаю 1 ч.л
+                </p>
+              </li>
+              <li data-aos="fade-left" data-aos-duration="1000" class="grid__item">
+                <h5 data-aos="fade-left" data-aos-duration="1200" class="grid__item-title">Заголовок</h5>
+                <p data-aos="fade-left" data-aos-duration="1400" class="grid__item-descr">
+                  Еще нужен молотый перец, так же по вкусу, хз как обьяснить
+                  сколько его надо)
+                </p>
+              </li>
+              <li data-aos="fade-up" data-aos-duration="1000" class="grid__item">
+                <h5 data-aos="fade-left" data-aos-duration="1200" class="grid__item-title">Заголовок</h5>
+                <p data-aos="fade-right" data-aos-duration="1200" class="grid__item-descr">
+                  Для жарки так же понадобится растительное масло,добавляй его в
+                  меру, по необходимости
+                </p>
+              </li>
+              <li data-aos="fade-up" data-aos-duration="1000" class="grid__item">
+                <h5 data-aos="fade-right" data-aos-duration="1200" class="grid__item-title">Заголовок</h5>
+                <p data-aos="fade-left" data-aos-duration="1200" class="grid__item-descr">
+                  Сметана, томатная паста или кетчуп тоже по-вкусу, но советую
+                  начать с 2 ч.л
+                </p>
+              </li>
+              <li data-aos="fade-up" data-aos-duration="1000" class="grid__item">
+                <h5 data-aos="fade-left" data-aos-duration="1200" class="grid__item-title">Заголовок</h5>
+                <p data-aos="fade-right" data-aos-duration="1200" class="grid__item-descr">
+                  Ну почти все,теперь надо собственно посолить-поперчить
+                  фарш,запихнуть его в капусту и начать готовку
+                </p>
+              </li>
+              <li data-aos="fade-up" data-aos-duration="1000" class="grid__item">
+                <h5 data-aos="fade-right" data-aos-duration="1200" class="grid__item-title">Заголовок</h5>
+                <p data-aos="fade-left" data-aos-duration="1200" class="grid__item-descr">
+                  Соус можно сделать по-разному, погугли сам, но если лень то
+                  тупо влей все в кастрюлю / сковороду и начинай готовить
+                  голубцы
+                </p>
+              </li>
+            </ul>
+            <a data-aos="fade-up" data-aos-duration="1600" href="#" class="grid__btn">Хорошего вам дня</a>
+          </div>
+        </section>
+      </main>
+      <!-- footer -->
+      <footer class="footer" id="footer">
+        <div class="container footer__container">
+          <div class="footer__col">
+            <a href="/" class="footer__logo">
+              <img
+                data-aos="fade-right" data-aos-duration="1200"
+                src="./img/icons/logo.svg"
+                width="48"
+                height="48"
+                loading="lazy"
+                alt="logo"
+              />
+            </a>
+            <p data-aos="fade-right" data-aos-duration="1400" class="footer__descr">
+              Надеюсь это все было вам полезно xd, честно говоря делал это все
+              "на всякий", но если вы это прочитали значит все было не зря, если
+              готовили голубцы по рецепту из таблиц, отпишите как вы все делали,
+              это очень важно )
+            </p>
+          </div>
+          <div class="footer__col">
+            <h3 data-aos="fade-up" data-aos-duration="1200" class="footer__col-title">Навигация</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a data-aos="fade-up" data-aos-duration="1400" href="#details" class="footer__item-link">
+                  Accordion & Lightbox
+                </a>
+              </li>
+              <li class="footer__item">
+                <a data-aos="fade-up" data-aos-duration="1600" href="#tab-1" class="footer__item-link"> Tabs & Popup </a>
+              </li>
+              <li class="footer__item">
+                <a data-aos="fade-up" data-aos-duration="1800" href="#slider-1" class="footer__item-link">
+                  Slider & Grid
+                </a>
+              </li>
+              <li class="footer__item">
+                <a data-aos="fade-up" data-aos-duration="2000" href="#footer" class="footer__item-link"> Contacts </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3 data-aos="fade-left" data-aos-duration="1200" class="footer__col-title">Мои ссылки</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a data-aos="fade-left" data-aos-duration="1400" href="#" class="footer__item-link--btn">
+                  KWORK
+                  <img
+                    src="./img/icons/kwork.png"
+                    loading="lazy"
+                    width="32"
+                    height="32"
+                    alt="KWORK"
+                  />
+                </a>
+              </li>
+              <li class="footer__item">
+                <a data-aos="fade-left" data-aos-duration="1600" target="_blank" href="https://t.me/avynay" class="footer__item-link">
+                  TG
+                  <img
+                    src="./img/icons/tg.png"
+                    loading="lazy"
+                    width="32"
+                    height="32"
+                    alt="tg"
+                  />
+                </a>
+              </li>
+              <li class="footer__item">
+                <a data-aos="fade-left" data-aos-duration="1800" target="_blank" href="https://vk.com/r0flik41" class="footer__item-link">
+                  VK
+                  <img
+                    src="./img/icons/vk.png"
+                    loading="lazy"
+                    width="32"
+                    height="32"
+                    alt="vk"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!-- popup -->
+      <div class="popup__bg">
+        <form class="popup">
+          <div class="close-popup" style="color: #000; font-size: 25px">X</div>
+          <p>
+            В этом окне так же можно сделать что угодно, например я сделал
+            контактную форму. <br />
+            Чтобы это закрыть нажми на крестик сверху справа или куда угодно за
+            пределы окна
+          </p>
+          <label>
+            <input type="text" name="name" />
+            <div class="label__text">Ваше имя</div>
+          </label>
+          <label>
+            <input type="tel" name="tel" />
+            <div class="label__text">Ваш телефон</div>
+          </label>
+          <label>
+            <textarea name="message"></textarea>
+            <div class="label__text">Ваше сообщение</div>
+          </label>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/fslightbox.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

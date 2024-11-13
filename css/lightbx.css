@@ -1,0 +1,87 @@
+.lightbox {
+  padding: 102px 0 102px;
+}
+.lightbox__title {
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.lightbox__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.lightbox__item {
+  display: block;
+  font-size: 25px;
+  font-weight: 500;
+  transition: all var(--transition);
+}
+.lightbox__item:hover {
+  color: #00a4cc;
+}
+.lightbox-arrows {
+  font-size: 35px;
+  font-weight: 600;
+}
+.lightbox-arrows:first-child {
+  animation: arrow-right 1s infinite;
+}
+.lightbox-arrows:last-child {
+  animation: arrow-left 1s infinite;
+}
+
+@keyframes arrow-right {
+  0% {
+    transform: translateX(0px) translateY(-3px);
+  }
+  50% {
+    transform: translateX(25px) translateY(-3px);
+    color: #00a4cc;
+  }
+  100% {
+    transform: translateX(0px) translateY(-3px);
+  }
+}
+
+@keyframes arrow-left {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-25px);
+    color: #00a4cc;
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes arrow-up {
+  0% {
+    transform: translateY(0px) rotate(90deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(90deg);
+    color: #00a4cc;
+  }
+  100% {
+    transform: translateY(0px) rotate(90deg);
+  }
+}
+
+@keyframes arrow-down {
+  0% {
+    transform: translateY(0px) rotate(90deg);
+  }
+  50% {
+    transform: translateY(25px) rotate(90deg);
+    color: #00a4cc;
+  }
+  100% {
+    transform: translateY(0px) rotate(90deg);
+  }
+}

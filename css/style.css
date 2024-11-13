@@ -1,0 +1,13 @@
+/* import other css files */
+@import "reset.css";
+@import "global.css";
+@import "header.css";
+@import "details.css";
+@import "lightbx.css";
+@import "tabs.css";
+@import "popup.css";
+@import "slider.css";
+@import "grid.css";
+@import "footer.css";
+@import "media.css";
+/* =============================================== */
